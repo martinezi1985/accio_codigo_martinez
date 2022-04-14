@@ -1,0 +1,485 @@
+* {
+    background-color:#65EBC3;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*vertical-align: baseline;*/
+    font-size: 20px;
+    border-style: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* --- Título index y texto footer --- */
+
+.logotipo {
+
+    width: 150px;
+    height: 150px;
+}
+
+.h1 {
+
+    color: #7F9DEB;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* --- Texto Footer --- */
+
+.foo--h4 {
+
+    font-style: italic;
+    text-align: center;
+    color: #7F9DEB;
+    font-weight: bold;
+}
+
+.foo--h5 {
+
+    font-style: italic;
+    text-align: center;
+    color: #7F9DEB;
+    font-weight: bold;
+
+}
+
+/* --- Enlaces de HTML --- */
+
+.binario>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    list-style: none;
+    min-height: 85px;
+    margin: 7.5px;
+}
+
+.lista1 a:hover {
+
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-self: space-around;
+    order: 1/5;
+    object-fit: contain;
+    color: #EBBD4D;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition:2s;
+}
+
+
+.lista2 a:hover {
+
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-self: space-around;
+    order: 2/5;
+    object-fit: contain;
+    color: #EBBD4D;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition:2s;
+}
+
+
+.lista3 a:hover {
+
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 3/5;
+    color: #EBBD4D;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition:2s;
+}
+
+.lista4 a:hover {
+
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 4/5;
+    color: #EBBD4D;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition:2s;
+}
+
+.lista5 a:hover {
+
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 5/5;
+    color: #EBBD4D;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition:2s;
+}
+
+
+
+
+
+
+/* Main Index */
+
+@media only screen and (min-width:576px) and (max-width: 1400px) {
+
+
+.principal__sección__imgmain--llamado {
+
+    width: 100vw;
+    height: 100vh;
+    padding: 15px 15px 15px 15px;
+    
+
+}
+
+.principal__sección__imgmain--h2 {
+
+    color: #EBBD4D;
+    text-align: center;
+    display: block;
+    line-height: 0.9;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3rem
+}
+
+
+.principal__sección__imgmain--portafolio {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "cocacola"
+        "ibm"
+        "mcdonalds"
+        "microsoft"
+        "linux"
+        "kfc";
+    padding-left: 85px;
+    margin-left: 7.5px;
+}
+
+
+.principal__sección__imgmain--cocacola {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "cocacola";
+    box-shadow: 10px;
+}
+
+.principal__sección__imgmain--ibm {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "ibm";
+    box-shadow: 10px;
+}
+
+.principal__sección__imgmain--mcdonalds:hover {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "mcdonalds";
+    box-shadow: 10px;
+    transform: scaleX(1.5);
+    transition: 2.3s;
+}
+
+.principal__sección__imgmain--microsoft:hover {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "microsoft";
+    box-shadow: 10px;
+    transform: scaleX(1.5);
+    transition: 2.3s;
+}
+
+.principal__sección__imgmain--linux:hover {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "linux";
+    box-shadow: 10px;
+    transform: scaleX(1.5);
+    transition: 2.3s;
+}
+
+.principal__sección__imgmain--kfc:hover {
+
+    width: 100px;
+    height: 100px;
+    grid-area: "kfc";
+    box-shadow: 10px;
+    transform: scaleX(1.5);
+    transition: 2.3s;
+
+} }
+
+
+
+/* Main Acerca de mi */
+
+
+.acercaContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "acerca-de-mi iframe";
+}
+
+.acerca-de-mi {
+    grid-area: acerca-de-mi;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #7F9DEB;
+    padding-left: 5px;
+}
+
+.iframe {
+    grid-area: iframe;
+}
+
+
+
+/* colocar clase al Iframe */
+
+
+/* Main Portafolio */
+
+@media only screen and (min-width:576px) and (max-width: 1400px) {
+
+
+.portafolioMain {
+
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-areas: "cocacolaPagina"
+        "mcdonaldsPagina"
+        "ibmPagina"
+        "kfcPagina"
+        "microsoftPagina"
+        "linuxPagina";
+}
+
+.cocacolaPagina {
+
+    grid-area: "cocacolaPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+}
+
+.mcdonaldsPagina {
+
+    grid-area: "mcdonaldsPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+}
+
+.ibmPagina {
+
+    grid-area: "ibmPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+
+}
+
+.kfcPagina {
+
+    grid-area: "kfcPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+}
+
+.linuxMint {
+
+    grid-area: "linuxPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+}
+
+.microsoftPagina {
+
+    grid-area: "microsoftPagina";
+    align-self: stretch;
+    border: 2px solid #EBBD4D;
+    background-color: #000;
+}
+}
+
+
+
+/* Main Habilidades */
+
+@media only screen and (min-width:576px) and (max-width: 1400px) {
+
+.logosHabilidades {
+
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-areas: "javascript"
+        "react"
+        "nodejs"
+        "mongodb"
+        "sql";
+    padding-left: 85px;
+    margin-left: 7.5px;
+}
+
+.javascript {
+
+    width: 250px;
+    height: 250px;
+    grid-area: "javascript";
+}
+
+.react {
+
+    width: 250px;
+    height: 250px;
+    grid-area: "react";
+}
+
+.nodejs {
+
+    width: 250px;
+    height: 250px;
+    grid-area: "nodejs";
+}
+
+
+
+.mongodb {
+
+    width: 250px;
+    height: 250px;
+    grid-area: "mongodb";
+}
+
+.sql {
+
+    width: 250px;
+    height: 250px;
+    grid-area: "sql";
+}
+}
+
+/* Main Contactos */
+
+.principal__sección__form {
+
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-areas: "field"
+        "legend"
+        "grupo";
+    color: #EBBD4D;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    padding-left: 85px;
+    margin: 7.5px;
+}
+
+.principal__sección__form--field {
+
+    border: none;
+    border-style: none;
+    position: relative;
+    overflow: hidden;
+    grid-area: "field";
+
+}
+
+.principal__sección__form--legend {
+
+    color: #EBBD4D;
+    font-size: 1em;
+    font-style: italic;
+    position: relative;
+    overflow: hidden;
+    grid-area: "legend";
+}
+
+.principal__sección__form__grupo {
+
+    font-size: 2em;
+    font-style: italic;
+    color: #EBBD4D;
+    position: relative;
+    grid-area: "grupo";
+}
+
+
+
+/* Footer */
+
+.foo__socialmedia {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-left: 85px;
+    padding-top: 45px;
+    margin: 7.5px;
+}
+
+
+.foo__socialmedia--twitter {
+
+    width: 45px;
+    height: 45px;
+}
+
+.foo__socialmedia--linkedin {
+
+    width: 45px;
+    height: 45px;
+}
+
+.foo__socialmedia--instagram {
+
+    width: 45px;
+    height: 45px;
+}
+
+.foo__socialmedia--youtube {
+
+    width: 45px;
+    height: 45px;
+}
+
+
+
+
+
+
+
